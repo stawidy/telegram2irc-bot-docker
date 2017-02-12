@@ -28,7 +28,7 @@ COPY docker-entrypoint.sh /entrypoint.sh
 
 ENV TG_BOT_API_KEY='' \
     TG_GROUP_ID='' \
-    IRC_SERVER='' \
+    IRC_SERVER=irc.freenode.net \
     IRC_CHANNEL='' \
     IRC_NICK=akarin_bot \
     IRC_PORT=6667 \
