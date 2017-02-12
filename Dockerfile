@@ -20,6 +20,7 @@ RUN set -x \
     && git clone $GIT_URL \
     && cd $SRC_DIR \
     && npm install \
+    && cd .. \
     && apk del .build-deps \
     && rm -rf /tmp/*
 
@@ -32,7 +33,5 @@ ENV TG_BOT_API_KEY='' \
     IRC_NICK=akarin_bot \
     IRC_PORT=6667 \
     IRC_PHOTO=true
-
-EXPOSE $IRC_PORT/tcp $IRC_PORT/udp
 
 ENTRYPOINT ["/entrypoint.sh"]
