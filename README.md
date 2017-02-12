@@ -28,6 +28,6 @@ docker run --name akarin -e TG_BOT_API_KEY=" " -e TG_GROUP_ID=" " -e IRC_SERVER=
 
 `IRC_NICK`, nickname for your bot to use on irc channel (default: akarin_bot).  
 
-`IRC_PORT`, port of irc server.  
+`IRC_PORT`, port of irc server (default: 6667).  
 
 `IRC_PHOTO`, enable photo forwarding (default: true).
