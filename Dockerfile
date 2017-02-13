@@ -15,8 +15,7 @@ RUN set -x \
                                     git \
                                     icu-dev \
                                     python \
-    && apk add --no-cache --virtual .run-deps \
-                                    nodejs \
+    && apk add --no-cache nodejs \
     && git clone $GIT_URL \
     && cd $SRC_DIR \
     && npm install \
@@ -34,4 +33,8 @@ ENV TG_BOT_API_KEY='' \
     IRC_PORT=6667 \
     IRC_PHOTO=true
 
+WORKDIR /telegram2irc-bot
+
 ENTRYPOINT ["/entrypoint.sh"]
+
+CMD ["node", "main.js"]
