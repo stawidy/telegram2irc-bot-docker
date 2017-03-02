@@ -11,7 +11,7 @@ docker pull stawidy/telegram2irc-bot
 Start an `telegram2irc-bot` instance:  
 
 ~~~bash
-docker run --name akarin -e TG_BOT_API_KEY=" " -e TG_GROUP_ID=" " -e IRC_SERVER=" " -e IRC_CHANNEL=" " -e IRC_NICK=" " -d stawidy/telegram2irc-bot
+docker run --name akarin -e TG_BOT_API_KEY="" -e TG_GROUP_ID="" -e IRC_SERVER="" -e IRC_CHANNEL="" -e IRC_NICK="" -e EX_BOTS="" -d stawidy/telegram2irc-bot
 ~~~
 
 > :warning: Before this bot can enter any group chats, you will need to configure it with correct permissions. Send the `/setprivacy` command to the `@BotFather`, specify which bot this command is for, then `disable the privacy` so the bot receives all messages sent in the group chat.
