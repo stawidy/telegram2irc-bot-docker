@@ -31,7 +31,8 @@ ENV TG_BOT_API_KEY='' \
     IRC_CHANNEL='' \
     IRC_NICK=akarin_bot \
     IRC_PORT=6667 \
-    IRC_PHOTO=true
+    IRC_PHOTO=true \
+    EX_BOTS=other_bot
 
 WORKDIR /telegram2irc-bot
 
