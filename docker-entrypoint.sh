@@ -3,7 +3,6 @@
 set -e
 
 cp config.example.js config.js
-cp nicks.json.example nicks.json
 
 sed -i  -e "s/exports.tg_bot_api_key \= ''\;/exports.tg_bot_api_key \= '$TG_BOT_API_KEY'\;/" \
         -e "s/exports.tg_group_id \= 0\;/exports.tg_group_id \= '$TG_GROUP_ID'\;/" \
